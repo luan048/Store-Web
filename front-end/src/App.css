@@ -1,0 +1,320 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    align-items: center;
+}
+
+.generalBodyHome {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 90px 0 0 0;
+}
+
+/*Menu*/
+
+.menu {
+    background-color: #f5f5f5;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.fa-cart-shopping {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 55px;
+}
+
+/*Fim Menu*/
+
+/*Body Products*/
+
+.bodyProducts {
+    width: 950px;
+    background-color: white;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 8rem;
+    max-height: 1900px;
+}
+
+/*Fim body*/
+
+/*Box Products*/
+
+.boxProduct1,
+.boxProduct2,
+.boxProduct3,
+.boxProduct4,
+.boxProduct5,
+.boxProduct6,
+.boxProduct7,
+.boxProduct8,
+.boxProduct9,
+.boxProduct10,
+.boxProduct11,
+.boxProduct12,
+.boxProduct13,
+.boxProduct14,
+.boxProduct15 {
+    width: 200px;
+    height: 250px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/*Fim Box*/
+
+/*Products*/
+
+/*Inicio Products*/
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5,
+.product6,
+.product7,
+.product8,
+.product9,
+.product10,
+.product11,
+.product12,
+.product13,
+.product14,
+.product15 {
+    position: absolute;
+    margin-top: -20px;
+    width: 200px;
+    height: auto;
+}
+
+.product1, 
+.product2, 
+.product3, 
+.product10, 
+.product11 {
+    margin-top: 10px;
+}
+
+
+/*Fim Products*/
+
+/*Description*/
+
+.descriptionProduct,
+.descriptionProduct2,
+.descriptionProduct3,
+.descriptionProduct4,
+.descriptionProduct5,
+.descriptionProduct6,
+.descriptionProduct7,
+.descriptionProduct8,
+.descriptionProduct9,
+.descriptionProduct10,
+.descriptionProduct11,
+.descriptionProduct12,
+.descriptionProduct13,
+.descriptionProduct14,
+.descriptionProduct15 {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+
+/*Fim Description*/
+
+/*Price*/
+
+.price1,
+.price2,
+.price3,
+.price4,
+.price5,
+.price6,
+.price7,
+.price8,
+.price9,
+.price10,
+.price11,
+.price12,
+.price13,
+.price14,
+.price15 {
+    position: absolute;
+    font-size: 18px;
+    margin-top: 180px;
+}
+
+/*Fim Price*/
+
+/*Button Price*/
+
+.buttonProduct1,
+.buttonProduct2,
+.buttonProduct3,
+.buttonProduct4,
+.buttonProduct5,
+.buttonProduct6,
+.buttonProduct7,
+.buttonProduct8,
+.buttonProduct9,
+.buttonProduct10,
+.buttonProduct11,
+.buttonProduct12,
+.buttonProduct13,
+.buttonProduct14,
+.buttonProduct15 {
+    position: absolute;
+    margin-top: 215px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.buttonProduct1:hover,
+.buttonProduct2:hover,
+.buttonProduct3:hover,
+.buttonProduct4:hover,
+.buttonProduct5:hover,
+.buttonProduct6:hover,
+.buttonProduct7:hover,
+.buttonProduct8:hover,
+.buttonProduct9:hover,
+.buttonProduct10:hover,
+.buttonProduct11:hover,
+.buttonProduct12:hover,
+.buttonProduct13:hover,
+.buttonProduct14:hover,
+.buttonProduct15:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/*Fim Button*/
+
+/*Message Sucessfull*/
+.menssageSucessfull {
+    width: 450px;
+    height: 100px;
+    background-color: #f0f0f0;
+    margin-top: 200px;
+    margin-left: 242px;
+    position: fixed;
+    z-index: 100000;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, 0.5s;
+}
+
+.menssageSucessfull.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menssageAddCart {
+    position: absolute;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.botomAddCart {
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Karla', sans-serif;
+    margin-top: 50px;
+    margin-left: 180px;
+    cursor: pointer;
+}
+
+.botomAddCart:hover {
+    color: gray;
+}
+
+/*Fim Message*/
+
+/*Div Search*/
+
+.divSearch {
+    width: 280px;
+    height: 500px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1270px;
+    margin-top: 195px;
+    border-top: 4px solid #f5f5f5;
+    border-right: 4px solid #f5f5f5;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.buttonFilter, 
+.buttonFilter2, 
+.buttonFilter3, 
+.buttonFilter4, 
+.buttonFilter5 {
+    margin: 20px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.buttonFilter:hover,
+.buttonFilter2:hover,
+.buttonFilter3:hover,
+.buttonFilter4:hover,
+.buttonFilter5:hover {
+    background-color: #f0f0f0;
+}
+
+/*Fim Div Search*/
