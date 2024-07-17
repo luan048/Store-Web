@@ -9,25 +9,25 @@ Project with interaction between Front-end and Back-end, an API, for example, a 
 
 ## 1 Install project
 
-## Install in directory back-end
+### Install in directory back-end
 
 ```bash
 $ npm install
 ```
 
-## Run server back-end 
+### Run server back-end 
 
 ```bash
 $ npm run dev
 ```
 
-## Install in derectory front-end
+### Install in derectory front-end
 
 ```bash
 $ npm install
 ```
 
-## Run front-end pages
+### Run front-end pages
 
 ```bash
 $ npm run dev
