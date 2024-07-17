@@ -5,8 +5,6 @@ dotenv.config()
 
 const {Client} = pkg
 
-console.log(process.env.DB_USER)
-
 const cliente = new Client({
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
