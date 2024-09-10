@@ -27,7 +27,7 @@ server.get('/home', async (req, res) => {
     }
 })
 
-server.post('/home/filter', async (req, res) => { //GET SÓ ACEITA REQ.PARAMS, PARA FAZER REQUISIÇÃO NO BODY, FOI USADO POST
+server.post('/home/filter', async (req, res) => { //GET SÓ ACEITA REQ.PARAMS
 
     const {min, max} = req.body
 
@@ -160,7 +160,7 @@ server.put('/sale/:id', async (req, res) => {
 
 // Fim Products Sale Page
 
-//Manter conexão com banco de dados aberta enquanto o servidor estiver rodando
+//Está mantendo conexão com banco de dados aberta enquanto o servidor está rodando
 process.on('SIGTERM', async () => {
     console.log('Fechando Servidor...')
 
